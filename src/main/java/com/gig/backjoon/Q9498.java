@@ -1,0 +1,32 @@
+package com.gig.backjoon;
+
+import java.util.Scanner;
+
+/**
+ * @author : JAKE
+ * @date : 2022/09/07
+ * https://www.acmicpc.net/problem/9498
+ */
+public class Q9498 {
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        if (a >= 90) {
+            System.out.println("A");
+        } else if (a >= 80) {
+            System.out.println("B");
+        } else if (a >= 70) {
+            System.out.println("C");
+        } else if (a >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }
+    }
+}
