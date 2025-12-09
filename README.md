@@ -32,3 +32,17 @@ TreeMap 문제풀이
 
 * treeMap 은 key 를 오름차순으로 정렬하여 값을 갖고 있다.
 
+<br />
+
+### 구성이 같은 문자열
+
+- 풀이 : programmers/Q201395
+- 문제 : 구성이 같은 문자열이 같을 때 하나읨 문자열이 다른 문자열을 포함하는지 여부를 푸는 문제
+
+HashSet 문제풀이
+- HashSet 은 요소 내용을 기준으로 동등성을 비교함 (equals(), hashCode())
+
+1. HashSet<HashSet<Character>> set1 = new HashSet<>(); 을 만들어줌
+2. strs1 의 배열 요소 당 HashSet 1개씩을 character 배열을 같는 HashSet 을 만듬
+3. strs2 도 같은 방식으로 strs2 의 요소마다 HashSet 을 만들어준 후 
+4. set1.contains(set2) 처럼 contains 함수로 요소의 동등성을 비교한 후 조건의 일치여부에 따라 답을 생성
