@@ -46,3 +46,19 @@ HashSet 문제풀이
 2. strs1 의 배열 요소 당 HashSet 1개씩을 character 배열을 같는 HashSet 을 만듬
 3. strs2 도 같은 방식으로 strs2 의 요소마다 HashSet 을 만들어준 후 
 4. set1.contains(set2) 처럼 contains 함수로 요소의 동등성을 비교한 후 조건의 일치여부에 따라 답을 생성
+
+<br />
+
+## Stack 문제
+
+- 풀이 : programmers/Q201398
+- 문제 : 후위 연산식 계산하기
+
+문제풀이
+- 중위표기식 : 숫자 사이에 연산식이 들어가있는 식 ( 3 + 5 )
+- 후위표기식 : 숫자 뒤에 연산식이 들어가있는 식 ( 3 5 + )
+
+1. 연산을 하기 위한 Stack<Integer> 를 생성한다.
+2. +, -, * 인 경우 연산을 수행할 함수를 작성한다.
+3. 숫자인 경우 stack.push(), 연산자인 경우 stack.pop() 을 통해 숫자를 꺼낸다.
+4. 연산식 수행 후 결과값을 stack.push() 한다.
