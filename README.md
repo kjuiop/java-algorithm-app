@@ -105,3 +105,5 @@ HashSet 문제풀이
 - 큐는 인덱싱이 불가하고, 선입선출 (FIFO) 형태이다.
 - 큐의 모든 연산은 연산횟수 1번이다.
 - Java 에서 큐는 java.util.Queue / java.util.LinkedList 가 있다.
+- 큐에서 queue.peek() 는 맨 앞의 요소이다.
+
